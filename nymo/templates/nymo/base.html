@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+     {% block title_block %} Nymo {% endblock %}
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h2>Nymo</h2>
+    </header>
+    <!-- Page specific content starts here -->
+    {% block body_block %}
+    <p>Sidan haladist ekki inn</p>
+    {% endblock%}
+    <!-- imports, these need to be hosted locally pre-deployment -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+  </body>
+</html>
